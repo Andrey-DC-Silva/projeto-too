@@ -8,7 +8,9 @@ public class Pessoa {
     private String CPF;
     private LocalDate dtNasc;
 
-    Pessoa(String nome){nome = nome;}
+    Pessoa(String nome){
+        nome = nome;
+    }
 
     Pessoa(){
 
@@ -21,13 +23,13 @@ public class Pessoa {
 
     public String exibirDados(){
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        String aux = "Dados da Pessoa Cadastrada: /n";
-        aux += "Nome: " + nome + "/n";
+        String aux = "\nDados da Pessoa Cadastrada: \n";
+        aux += "Nome: " + nome + "\n";
         if(CPF != null){
-            aux += "CPF: " + CPF + "/n";
+            aux += "CPF: " + CPF + "\n";
         }
         if(dtNasc != null){
-            aux += "Data de Nascimento: " + dtNasc + "/n";
+            aux += "Data de Nascimento: " + dtNasc;
         }
         return aux;
     }

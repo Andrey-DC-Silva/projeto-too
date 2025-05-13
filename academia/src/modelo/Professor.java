@@ -11,7 +11,7 @@ public class Professor extends Pessoa{
     @Override
     public String exibirDados(){
         String aux = super.exibirDados();
-        aux += "/nEspecialização: " + especializacao;
+        aux += "Especialização: " + especializacao;
         return aux;
     }
 
